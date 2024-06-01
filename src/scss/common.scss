@@ -1,0 +1,106 @@
+.page {
+	&__hero {
+	}
+	// .page__about
+
+	&__about {
+		@media (min-width: $mobile) {
+			margin-top: toRem(-114);
+		}
+		@media (max-width: $mobile) {
+			box-shadow: 0 toRem(4) toRem(40) 0 rgba(34, 34, 34, 0.05);
+		}
+		&:not(:last-child) {
+			margin-bottom: toRem(214);
+		}
+		@media (max-width: $tablet) {
+			&:not(:last-child) {
+				margin-bottom: toRem(60);
+			}
+		}
+	}
+
+	// .page__action
+
+	&__action {
+		&:not(:last-child) {
+			margin-bottom: toRem(176);
+		}
+		@media (max-width: $tablet) {
+			&:not(:last-child) {
+				margin-bottom: toRem(60);
+			}
+		}
+	}
+	// .page__transition
+
+	&__transition {
+		&:not(:last-child) {
+			margin-bottom: toRem(176);
+		}
+		@media (max-width: $tablet) {
+			&:not(:last-child) {
+				@include adaptiveValue("margin-bottom", 250, 100, 0, 991.98, 320);
+			}
+		}
+	}
+	// .page__blog
+
+	&__blog {
+		&:not(:last-child) {
+			margin-bottom: toRem(115);
+		}
+		@media (max-width: $mobile) {
+			&:not(:last-child) {
+				margin-bottom: toRem(40);
+			}
+		}
+	}
+	// .page__first-step
+
+	&__first-step {
+	}
+}
+
+.title {
+	color: var(--dark);
+	font-size: toRem(48);
+	font-weight: 600;
+	line-height: 1.3;
+	text-transform: capitalize;
+	letter-spacing: toRem(-1);
+	@media (max-width: $tablet) {
+		font-size: toRem(40);
+	}
+	@media (max-width: $mobileSmall) {
+		font-size: toRem(24);
+	}
+	&_big {
+		letter-spacing: toRem(-1.3);
+		font-size: toRem(64);
+		text-shadow: 0 toRem(4) toRem(4) rgba(0, 0, 0, 0.25);
+		font-weight: 600;
+		line-height: 1.3;
+		color: var(--yellow);
+		@media (max-width: $mobile) {
+			font-size: toRem(45);
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: toRem(32);
+		}
+	}
+	&_small {
+		font-size: toRem(32);
+		@media (max-width: $mobileSmall) {
+			font-size: toRem(20);
+			line-height: 1.3;
+		}
+	}
+}
+.text {
+	p {
+		&:not(:last-child) {
+			margin-bottom: toRem(10);
+		}
+	}
+}
