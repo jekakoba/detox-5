@@ -496,6 +496,7 @@
 
 .first-step {
 	position: relative;
+	background-color: var(--bg-light-white);
 	// .first-step__container
 
 	&__container {
@@ -625,7 +626,7 @@
 			height: 100%;
 			top: 0;
 			left: 0;
-			background: linear-gradient(90deg, #f8f8f8 5%, rgba(248, 248, 248, 0.5) 25.5%, rgba(248, 248, 248, 0) 100%);
+			background: linear-gradient(270deg, rgba(244, 249, 252, 0) 5.22%, #f4f9fc 59.86%);
 			pointer-events: none;
 			z-index: 3;
 		}
